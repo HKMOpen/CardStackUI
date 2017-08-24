@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-  compileSdkVersion rootProject.ext.COMPILE_SDK_VERSION
-  buildToolsVersion rootProject.ext.BUILD_TOOLS_VERSION
+  compileSdkVersion ANDROID_BUILD_SDK_VERSION as int
+  buildToolsVersion ANDROID_BUILD_TOOLS_VERSION
 
   defaultConfig {
     applicationId "com.mutualmobile.cardstack.sample"
 
-    minSdkVersion rootProject.ext.MIN_SDK_VERSION
-    targetSdkVersion rootProject.ext.TARGET_SDK_VERSION
+    minSdkVersion ANDROID_BUILD_MIN_SDK_VERSION as int
+    targetSdkVersion ANDROID_BUILD_TARGET_SDK_VERSION as int
 
     versionCode 1
     versionName "1.0"
@@ -23,7 +23,8 @@ android {
 
 dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
-  compile "com.android.support:cardview-v7:${rootProject.ext.SUPPORT_LIB_VERSION}"
+  compile supportDependencies.appCompat
   compile 'com.tramsun.libs:prefcompat:0.7'
-  compile 'com.mutualmobile.android:cardstack:0.5.3'
+  //compile 'com.mutualmobile.android:cardstack:0.5.3'
+  compile project(':dgemporerstack')
 }

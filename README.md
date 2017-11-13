@@ -51,6 +51,10 @@ Known Issues
 
 ```parallax_enabled``` and ```parallax_scale``` are not working currently. Also the drag to move cards also is not working.
 
+
+### Thank you for your support and we will bring more amazing libraries to your productive works. We are accepting bitcoin by the address as below. Please scan the QR code to start
+![wallet](http://s32.postimg.org/sdd1oio1t/qrwallet.jpg)
+
 License
 -------
 
